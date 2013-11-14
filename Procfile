@@ -1,1 +1,1 @@
-web: bundle exec serve -p $PORT
+web: bundle exec serve $PORT
