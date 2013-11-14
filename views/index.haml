@@ -1,0 +1,47 @@
+!!! 5
+.container
+  %header
+    %h1 Enterprise Dependency Dashboard
+    %h2 Monitor all the dependencies in your project.
+  %nav
+    %button.show-monitor Add Monitor
+    %button.show-group Add Group
+  .main
+    .box
+      %h3 Virtual NPR
+      .content Content
+
+.modal.add-monitor
+  .dialog
+    %header
+      %h3 Add Monitor
+      %span.close &times;
+    .body
+      %form
+        %div
+          %label Service Type:
+          %select
+            %option URL
+            %option DB
+            %option REST
+            %option SOAP
+            %option MessageQueue
+            %option Custom
+        %div
+          %label Group:
+          %select
+            %option Virtual NPR
+    %footer
+      %button.submit Add
+.modal.add-group
+  .dialog
+    %header
+      %h3 Add Group
+      %span.close &times;
+    .body
+      %form
+        %div
+          %label Group Name:
+          %input{:type => 'text'}
+    %footer
+      %button.submit Add

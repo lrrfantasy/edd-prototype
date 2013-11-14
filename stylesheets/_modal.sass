@@ -1,0 +1,62 @@
+.modal-backdrop
+  background: rgba(0, 0, 0, 0.6)
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+  position: fixed
+  z-index: 10
+.modal
+  display: none
+  background: transparent
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+  position: fixed
+  z-index: 20
+  .dialog
+    background: white
+    width: 600px
+    margin: 100px auto
+    padding: 20px
+    header
+      padding: 10px 0
+    h3
+      display: inline-block
+    .close
+      float: right
+      cursor: pointer
+      font-size: 20px
+      &:hover
+        color: #999
+
+    .body
+      padding: 10px 0
+      border-bottom: 1px solid $light-grey
+      label, select, input
+        padding: 0 20px
+        width: 200px
+        font-size: 20px
+        line-height: 30px
+        color: #555
+      select, input
+        border: 1px solid $light-grey
+        &:focus
+          border: 1px solid #1e90ff
+      label
+        display: inline-block
+      select
+        height: 30px
+      input
+        height: 30px
+        padding: 5px
+        border: 1px solid $light-grey
+      div
+        padding: 10px 0
+    footer
+      padding: 10px 0
+      overflow: hidden
+      button.submit
+        float: right
+        background: #1e90ff

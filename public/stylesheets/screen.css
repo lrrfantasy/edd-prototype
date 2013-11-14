@@ -1,0 +1,215 @@
+html, body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+div, p, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, figure {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+select, button, input, textarea {
+  border: none;
+  outline: none;
+  padding: none;
+}
+
+select, button {
+  cursor: pointer;
+}
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+}
+
+caption, th {
+  text-align: left;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+abbr, acronym {
+  border: 0;
+}
+
+form {
+  display: inline;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, address {
+  display: block;
+}
+
+.clear, .clearfloat {
+  clear: both;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+
+button {
+  height: 40px;
+  width: 100px;
+  color: white;
+  font-size: 14px;
+}
+
+.modal-backdrop {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+.modal {
+  display: none;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 20;
+}
+.modal .dialog {
+  background: white;
+  width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+}
+.modal .dialog header {
+  padding: 10px 0;
+}
+.modal .dialog h3 {
+  display: inline-block;
+}
+.modal .dialog .close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+.modal .dialog .close:hover {
+  color: #999999;
+}
+.modal .dialog .body {
+  padding: 10px 0;
+  border-bottom: 1px solid #ededed;
+}
+.modal .dialog .body label, .modal .dialog .body select, .modal .dialog .body input {
+  padding: 0 20px;
+  width: 200px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #555555;
+}
+.modal .dialog .body select, .modal .dialog .body input {
+  border: 1px solid #ededed;
+}
+.modal .dialog .body select:focus, .modal .dialog .body input:focus {
+  border: 1px solid dodgerblue;
+}
+.modal .dialog .body label {
+  display: inline-block;
+}
+.modal .dialog .body select {
+  height: 30px;
+}
+.modal .dialog .body input {
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ededed;
+}
+.modal .dialog .body div {
+  padding: 10px 0;
+}
+.modal .dialog footer {
+  padding: 10px 0;
+  overflow: hidden;
+}
+.modal .dialog footer button.submit {
+  float: right;
+  background: dodgerblue;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 20px auto;
+}
+
+header {
+  border-bottom: 1px solid #ededed;
+}
+header h1, header h2 {
+  padding: 10px 0;
+}
+header h2 {
+  font-size: 16px;
+}
+
+nav {
+  padding: 20px 0;
+  text-align: right;
+  border-bottom: 1px solid #ededed;
+}
+nav button.show-monitor {
+  background: dodgerblue;
+}
+nav button.show-group {
+  background: turquoise;
+}
+
+.main {
+  padding: 20px 0;
+}
+.main .box {
+  border: 1px solid #c4e3f3;
+}
+.main .box h3 {
+  background: #c4e3f3;
+  color: white;
+  padding: 10px 20px;
+}
+.main .box .content {
+  padding: 10px 20px;
+}
