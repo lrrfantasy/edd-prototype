@@ -195,8 +195,14 @@ nav {
 nav button.show-monitor {
   background: dodgerblue;
 }
+nav button.show-monitor:hover {
+  background: #51a9ff;
+}
 nav button.show-group {
   background: turquoise;
+}
+nav button.show-group:hover {
+  background: #6ce7db;
 }
 
 .main {
