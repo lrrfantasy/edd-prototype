@@ -34,24 +34,30 @@
     .body
       padding: 10px 0
       border-bottom: 1px solid $light-grey
-      label, select, input
+      label, select, input, textarea
         padding: 0 20px
         width: 200px
         font-size: 20px
         line-height: 30px
         color: #555
-      select, input
+      select, input, textarea
         border: 1px solid $light-grey
         &:focus
           border: 1px solid $dodger-blue
       label
         display: inline-block
+        vertical-align: top
       select
         height: 30px
       input
         height: 30px
         padding: 5px
-        border: 1px solid $light-grey
+      textarea
+        height: 100px
+        padding: 5px
+        line-height: 18px
+        font-size: 14px
+        resize: none
       div
         padding: 10px 0
     footer
@@ -59,4 +65,7 @@
       overflow: hidden
       button.submit
         float: right
-        background: $dodger-blue
+        @include hover-background($dodger-blue)
+
+.monitor-section
+  display: none

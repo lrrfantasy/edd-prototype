@@ -136,21 +136,22 @@ button {
   padding: 10px 0;
   border-bottom: 1px solid #ededed;
 }
-.modal .dialog .body label, .modal .dialog .body select, .modal .dialog .body input {
+.modal .dialog .body label, .modal .dialog .body select, .modal .dialog .body input, .modal .dialog .body textarea {
   padding: 0 20px;
   width: 200px;
   font-size: 20px;
   line-height: 30px;
   color: #555555;
 }
-.modal .dialog .body select, .modal .dialog .body input {
+.modal .dialog .body select, .modal .dialog .body input, .modal .dialog .body textarea {
   border: 1px solid #ededed;
 }
-.modal .dialog .body select:focus, .modal .dialog .body input:focus {
+.modal .dialog .body select:focus, .modal .dialog .body input:focus, .modal .dialog .body textarea:focus {
   border: 1px solid dodgerblue;
 }
 .modal .dialog .body label {
   display: inline-block;
+  vertical-align: top;
 }
 .modal .dialog .body select {
   height: 30px;
@@ -158,7 +159,13 @@ button {
 .modal .dialog .body input {
   height: 30px;
   padding: 5px;
-  border: 1px solid #ededed;
+}
+.modal .dialog .body textarea {
+  height: 100px;
+  padding: 5px;
+  line-height: 18px;
+  font-size: 14px;
+  resize: none;
 }
 .modal .dialog .body div {
   padding: 10px 0;
@@ -170,6 +177,13 @@ button {
 .modal .dialog footer button.submit {
   float: right;
   background: dodgerblue;
+}
+.modal .dialog footer button.submit:hover {
+  background: #51a9ff;
+}
+
+.monitor-section {
+  display: none;
 }
 
 .container {
