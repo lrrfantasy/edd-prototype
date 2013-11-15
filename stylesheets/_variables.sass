@@ -1,0 +1,9 @@
+$light-grey: #ededed
+$dodger-blue: #1e90ff
+$turquoise: #40e0d0
+$grey-blue: #c4e3f3
+
+@mixin hover-background ($color)
+  background: $color
+  &:hover
+    background: lighten($color, 10%)

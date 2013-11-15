@@ -4,6 +4,7 @@
   margin: 20px
   &.icon:before
     font-family: fontello
+    color: white
     display: block
     font-size: 60px
     text-align: center
@@ -11,7 +12,7 @@
     margin: 20px auto
     padding: 20px
     border-radius: 50%
-    background: rgba(255, 255, 255, 0.8)
+    background: rgba(255, 255, 255, 0.2)
   &.url:before
     content: "\e800"
   &.database:before
@@ -26,9 +27,10 @@
     content: "\e804"
 
   &.success
-    background: #9acd32
+    @include hover-background(#9acd32)
   &.fail
-    background: #cd5c5c
+    @include hover-background(#cd5c5c)
   h4
     text-align: center
     padding-bottom: 20px
+    color: white

@@ -221,6 +221,7 @@ nav button.show-group {
 }
 .monitor.icon:before {
   font-family: fontello;
+  color: white;
   display: block;
   font-size: 60px;
   text-align: center;
@@ -228,7 +229,7 @@ nav button.show-group {
   margin: 20px auto;
   padding: 20px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.2);
 }
 .monitor.url:before {
   content: "\e800";
@@ -251,12 +252,19 @@ nav button.show-group {
 .monitor.success {
   background: yellowgreen;
 }
+.monitor.success:hover {
+  background: #aed75b;
+}
 .monitor.fail {
   background: indianred;
+}
+.monitor.fail:hover {
+  background: #d98383;
 }
 .monitor h4 {
   text-align: center;
   padding-bottom: 20px;
+  color: white;
 }
 
 @font-face {
