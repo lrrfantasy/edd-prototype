@@ -281,6 +281,12 @@ nav button.show-group:hover {
 .monitor.fail:hover {
   background: #d98383;
 }
+.monitor.disabled {
+  background: #969696;
+}
+.monitor.disabled:hover {
+  background: #b0b0b0;
+}
 .monitor h4 {
   text-align: center;
   padding-bottom: 20px;
