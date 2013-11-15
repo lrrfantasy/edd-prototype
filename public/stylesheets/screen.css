@@ -213,3 +213,56 @@ nav button.show-group {
 .main .box .content {
   padding: 10px 20px;
 }
+
+.monitor {
+  display: inline-block;
+  width: 200px;
+  margin: 20px;
+}
+.monitor.icon:before {
+  font-family: fontello;
+  display: block;
+  font-size: 60px;
+  text-align: center;
+  width: 60px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+}
+.monitor.url:before {
+  content: "\e800";
+}
+.monitor.database:before {
+  content: "\e801";
+}
+.monitor.rest:before {
+  content: "\e805";
+}
+.monitor.soap:before {
+  content: "\e803";
+}
+.monitor.message-queue:before {
+  content: "\e802";
+}
+.monitor.custom:before {
+  content: "\e804";
+}
+.monitor.success {
+  background: yellowgreen;
+}
+.monitor.fail {
+  background: indianred;
+}
+.monitor h4 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@font-face {
+  font-family: "fontello";
+  src: url("/fonts/fontello.eot");
+  src: url("/fonts/fontello.eot#iefix") format("embedded-opentype"), url("/fonts/fontello.woff") format("woff"), url("../font/fontello.ttf?34821820") format("truetype"), url("/fonts/fontello.svg#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
