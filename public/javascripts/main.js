@@ -5,7 +5,11 @@ $(function(){
   selectMonitorType();
   $('.add-monitor .type').change(function(){
     selectMonitorType();
-  })
+  });
+
+  $('.box h3').click(function(){
+    $(this).parent().toggleClass('active');
+  });
 });
 
 function bindModal(triggerButtonSelector, modalSelector){

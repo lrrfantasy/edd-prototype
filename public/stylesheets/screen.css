@@ -223,7 +223,32 @@ nav button.show-group:hover {
   padding: 20px 0;
 }
 .main .box {
+  margin-bottom: 20px;
   border: 1px solid #c4e3f3;
+  position: relative;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+.main .box:before {
+  content: "\e806";
+  font-family: fontello;
+  font-size: 26px;
+  line-height: 46px;
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotate(540deg);
+  -moz-transform: rotate(540deg);
+  -ms-transform: rotate(540deg);
+  -o-transform: rotate(540deg);
+  transform: rotate(540deg);
 }
 .main .box h3 {
   background: #c4e3f3;
@@ -231,7 +256,18 @@ nav button.show-group:hover {
   padding: 10px 20px;
 }
 .main .box .content {
+  display: none;
   padding: 10px 20px;
+}
+.main .box.active:before {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.main .box.active .content {
+  display: block;
 }
 
 .monitor {

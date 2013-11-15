@@ -20,10 +20,30 @@ nav
 .main
   padding: 20px 0
   .box
+    margin-bottom: 20px
     border: 1px solid $grey-blue
+    position: relative
+    @include transition(1s)
+    &:before
+      content: "\e806"
+      font-family: fontello
+      font-size: 26px
+      line-height: 46px
+      color: white
+      position: absolute
+      right: 10px
+      top: 0
+      @include transition(1s)
+      @include rotate(540deg)
     h3
       background: $grey-blue
       color: white
       padding: 10px 20px
     .content
+      display: none
       padding: 10px 20px
+    &.active
+      &:before
+        @include rotate(0deg)
+      .content
+        display: block

@@ -7,7 +7,7 @@
     %button.show-monitor Add Monitor
     %button.show-group Add Group
   .main
-    .box
+    .box.active
       %h3 Virtual NPR
       .content
         %section.monitor.icon.url.success
@@ -46,6 +46,17 @@
           %h4 Client Message Queue
         %section.monitor.icon.custom.fail
           %h4 Customised Service
+    .box.active
+      %h3 Customer Index
+      .content
+        %section.monitor.icon.url.success
+          %h4 Google.com
+        %section.monitor.icon.database.success
+          %h4 Build env MySQL
+        %section.monitor.icon.rest.fail
+          %h4 Github REST
+        %section.monitor.icon.soap.disabled
+          %h4 Twitter SOAP
 
 .modal.add-monitor
   .dialog
