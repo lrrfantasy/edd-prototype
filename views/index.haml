@@ -12,11 +12,11 @@
       .content
         %section.monitor.icon.url.success
           %h4 Google.com
-        %section.monitor.icon.database.success
+        %section.monitor.icon.database.disabled
           %h4 Build env MySQL
         %section.monitor.icon.rest.fail
           %h4 Github REST
-        %section.monitor.icon.soap.disabled
+        %section.monitor.icon.soap.success
           %h4 Twitter SOAP
         %section.monitor.icon.message-queue.success
           %h4 Client Message Queue
@@ -24,11 +24,11 @@
           %h4 Customised Service
         %section.monitor.icon.url.success
           %h4 Google.com
-        %section.monitor.icon.database.success
+        %section.monitor.icon.database.disabled
           %h4 Build env MySQL
         %section.monitor.icon.rest.fail
           %h4 Github REST
-        %section.monitor.icon.soap.disabled
+        %section.monitor.icon.soap.success
           %h4 Twitter SOAP
         %section.monitor.icon.message-queue.success
           %h4 Client Message Queue
@@ -36,11 +36,11 @@
           %h4 Customised Service
         %section.monitor.icon.url.success
           %h4 Google.com
-        %section.monitor.icon.database.success
+        %section.monitor.icon.database.disabled
           %h4 Build env MySQL
         %section.monitor.icon.rest.fail
           %h4 Github REST
-        %section.monitor.icon.soap.disabled
+        %section.monitor.icon.soap.success
           %h4 Twitter SOAP
         %section.monitor.icon.message-queue.success
           %h4 Client Message Queue
@@ -51,11 +51,11 @@
       .content
         %section.monitor.icon.url.success
           %h4 Google.com
-        %section.monitor.icon.database.success
+        %section.monitor.icon.database.disabled
           %h4 Build env MySQL
         %section.monitor.icon.rest.fail
           %h4 Github REST
-        %section.monitor.icon.soap.disabled
+        %section.monitor.icon.soap.success
           %h4 Twitter SOAP
 
 .modal.add-monitor
@@ -69,7 +69,7 @@
           %label Service Type:
           %select.type
             %option URL
-            %option DB
+            %option Database
             %option REST
             %option SOAP
             %option Message Queue
@@ -88,7 +88,7 @@
           %div
             %label URL:
             %input{:type => 'url'}
-        .monitor-section.add-db
+        .monitor-section.add-database
           %div
             %label Database Type:
             %input{:type => 'text'}
@@ -101,7 +101,6 @@
             %input{:type => 'url'}
     %footer
       %button.submit Add
-
 .modal.add-group
   .dialog
     %header
@@ -114,3 +113,52 @@
           %input{:type => 'text'}
     %footer
       %button.submit Add
+
+.modal.monitor-url
+  .dialog
+    %header
+      %h3 Google.com
+      %span.close &times;
+    .body
+      %div
+        %label Description:
+        %p This is to validate if Google search function is available
+      %div
+        %label URL:
+        %label https://google.co.uk
+      %div
+        %label Status:
+        %label Successful
+.modal.monitor-database
+  .dialog
+    %header
+      %h3 Build env MySQL
+      %span.close &times;
+    .body
+      %div
+        %label Description:
+        %p MySQL database of Build environment
+      %div
+        %label Database Type:
+        %label MySQL
+      %div
+        %label Database URL:
+        %label mysql://build.internal/build
+      %div
+        %label Status:
+        %label Disabled
+.modal.monitor-rest
+  .dialog
+    %header
+      %h3 Github REST
+      %span.close &times;
+    .body
+      %div
+        %label Description:
+        %p Github REST Service
+      %div
+        %label REST URL:
+        %label https://api.github.com/v2
+      %div
+        %label Status:
+        %label Failed

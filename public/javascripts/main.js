@@ -2,6 +2,10 @@ $(function(){
   bindModal('.show-monitor', '.modal.add-monitor');
   bindModal('.show-group', '.modal.add-group');
 
+  $.each(['url', 'database', 'rest'], function(idx, elem){
+    bindModal('.monitor.' + elem, '.modal.monitor-' + elem);
+  });
+
   selectMonitorType();
   $('.add-monitor .type').change(function(){
     selectMonitorType();

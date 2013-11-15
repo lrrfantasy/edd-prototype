@@ -136,7 +136,8 @@ button {
   padding: 10px 0;
   border-bottom: 1px solid #ededed;
 }
-.modal .dialog .body label, .modal .dialog .body select, .modal .dialog .body input, .modal .dialog .body textarea {
+.modal .dialog .body label, .modal .dialog .body select, .modal .dialog .body input, .modal .dialog .body textarea, .modal .dialog .body p {
+  display: inline-block;
   padding: 0 20px;
   width: 200px;
   font-size: 20px;
@@ -166,6 +167,9 @@ button {
   line-height: 18px;
   font-size: 14px;
   resize: none;
+}
+.modal .dialog .body p {
+  width: 300px;
 }
 .modal .dialog .body div {
   padding: 10px 0;
@@ -240,10 +244,10 @@ nav button.show-group:hover {
   position: absolute;
   right: 10px;
   top: 0;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
   -webkit-transform: rotate(540deg);
   -moz-transform: rotate(540deg);
   -ms-transform: rotate(540deg);
@@ -274,6 +278,7 @@ nav button.show-group:hover {
   display: inline-block;
   width: 200px;
   margin: 20px;
+  cursor: pointer;
 }
 .monitor.icon:before {
   font-family: fontello;
