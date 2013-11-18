@@ -186,10 +186,10 @@ button {
   background: #51a9ff;
 }
 .modal .dialog footer button.delete {
-  background: #bc3a3a;
+  background: #ed143d;
 }
 .modal .dialog footer button.delete:hover {
-  background: indianred;
+  background: #f14364;
 }
 
 .monitor-section {
@@ -223,10 +223,10 @@ nav button.show-monitor:hover {
   background: #51a9ff;
 }
 nav button.show-group {
-  background: turquoise;
+  background: #1aa093;
 }
 nav button.show-group:hover {
-  background: #6ce7db;
+  background: #21ccbb;
 }
 
 .main {
@@ -234,7 +234,7 @@ nav button.show-group:hover {
 }
 .main .box {
   margin-bottom: 20px;
-  border: 1px solid #c4e3f3;
+  border: 1px solid lightskyblue;
   position: relative;
   -webkit-transition: 1s;
   -moz-transition: 1s;
@@ -261,7 +261,7 @@ nav button.show-group:hover {
   transform: rotate(540deg);
 }
 .main .box h3 {
-  background: #c4e3f3;
+  background: lightskyblue;
   color: white;
   padding: 10px 20px;
 }
