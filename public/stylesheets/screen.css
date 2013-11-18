@@ -185,6 +185,12 @@ button {
 .modal .dialog footer button.submit:hover {
   background: #51a9ff;
 }
+.modal .dialog footer button.delete {
+  background: #bc3a3a;
+}
+.modal .dialog footer button.delete:hover {
+  background: indianred;
+}
 
 .monitor-section {
   display: none;

@@ -66,9 +66,12 @@
     footer
       padding: 10px 0
       overflow: hidden
-      button.submit
-        float: right
-        @include hover-background($dodger-blue)
+      button
+        &.submit
+          float: right
+          @include hover-background($dodger-blue)
+        &.delete
+          @include hover-background($bloody-red)
 
 .monitor-section
   display: none
