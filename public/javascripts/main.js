@@ -20,7 +20,7 @@ $(function(){
   });
   $('.show').click(function(){
     $(this).parent().parent().removeClass('in-edit');
-  })
+  });
 });
 
 function bindModal(triggerButtonSelector, modalSelector){
@@ -28,8 +28,8 @@ function bindModal(triggerButtonSelector, modalSelector){
     $(modalSelector).modal('show');
   });
   $(modalSelector + ' .close').click(function(){
-    $(modalSelector).modal('hide')
-  })
+    $(modalSelector).modal('hide');
+  });
 }
 
 function selectMonitorType(){
