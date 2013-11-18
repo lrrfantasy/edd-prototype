@@ -1,3 +1,5 @@
+'use strict';
+
 $(function(){
   bindModal('.show-monitor', '.modal.add-monitor');
   bindModal('.show-group', '.modal.add-group');
