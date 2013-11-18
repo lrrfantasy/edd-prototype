@@ -118,6 +118,18 @@ button {
   margin: 100px auto;
   padding: 20px;
 }
+.modal .dialog .with-edit, .modal .dialog .show {
+  display: none !important;
+}
+.modal .dialog .with-show, .modal .dialog .edit {
+  display: inline-block !important;
+}
+.modal .dialog.in-edit .with-edit, .modal .dialog.in-edit .show {
+  display: inline-block !important;
+}
+.modal .dialog.in-edit .with-show, .modal .dialog.in-edit .edit {
+  display: none !important;
+}
 .modal .dialog header {
   padding: 10px 0;
 }
@@ -138,7 +150,7 @@ button {
 }
 .modal .dialog .body label, .modal .dialog .body select, .modal .dialog .body input, .modal .dialog .body textarea, .modal .dialog .body p {
   display: inline-block;
-  padding: 0 20px;
+  margin: 0 10px;
   width: 200px;
   font-size: 20px;
   line-height: 30px;
@@ -159,11 +171,9 @@ button {
 }
 .modal .dialog .body input {
   height: 30px;
-  padding: 5px;
 }
 .modal .dialog .body textarea {
   height: 100px;
-  padding: 5px;
   line-height: 18px;
   font-size: 14px;
   resize: none;
@@ -190,6 +200,20 @@ button {
 }
 .modal .dialog footer button.delete:hover {
   background: #f14364;
+}
+.modal .dialog footer button.edit {
+  float: right;
+  background: dodgerblue;
+}
+.modal .dialog footer button.edit:hover {
+  background: #51a9ff;
+}
+.modal .dialog footer button.show {
+  float: right;
+  background: #1aa093;
+}
+.modal .dialog footer button.show:hover {
+  background: #21ccbb;
 }
 
 .monitor-section {

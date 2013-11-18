@@ -20,6 +20,17 @@
     width: 600px
     margin: 100px auto
     padding: 20px
+
+    .with-edit, .show
+      display: none !important
+    .with-show, .edit
+      display: inline-block !important
+    &.in-edit
+      .with-edit, .show
+        display: inline-block !important
+      .with-show, .edit
+        display: none !important
+
     header
       padding: 10px 0
     h3
@@ -36,7 +47,7 @@
       border-bottom: 1px solid $light-grey
       label, select, input, textarea, p
         display: inline-block
-        padding: 0 20px
+        margin: 0 10px
         width: 200px
         font-size: 20px
         line-height: 30px
@@ -52,10 +63,8 @@
         height: 30px
       input
         height: 30px
-        padding: 5px
       textarea
         height: 100px
-        padding: 5px
         line-height: 18px
         font-size: 14px
         resize: none
@@ -72,6 +81,12 @@
           @include hover-background($dodger-blue)
         &.delete
           @include hover-background($crimson)
+        &.edit
+          float: right
+          @include hover-background($dodger-blue)
+        &.show
+          float: right
+          @include hover-background($dark-turquoise)
 
 .monitor-section
   display: none

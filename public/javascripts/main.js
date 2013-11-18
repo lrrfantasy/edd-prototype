@@ -14,6 +14,13 @@ $(function(){
   $('.box h3').click(function(){
     $(this).parent().toggleClass('active');
   });
+
+  $('.edit').click(function(){
+    $(this).parent().parent().addClass('in-edit');
+  });
+  $('.show').click(function(){
+    $(this).parent().parent().removeClass('in-edit');
+  })
 });
 
 function bindModal(triggerButtonSelector, modalSelector){
