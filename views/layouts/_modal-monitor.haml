@@ -10,11 +10,11 @@
         %textarea.with-edit This is to validate if Google search function is available
       %div
         %label URL:
-        %label.with-show https://google.co.uk
+        %p.with-show https://google.co.uk
         %input.with-edit{:type => 'text', :value => 'https://google.co.uk'}
       %div
         %label Status:
-        %label Successful
+        %p Successful
     %footer
       %button.delete Delete
       %button.edit Edit
@@ -30,13 +30,18 @@
         %p MySQL database of Build environment
       %div
         %label Database Type:
-        %label MySQL
+        %p MySQL
       %div
         %label Database URL:
-        %label mysql://build.internal/build
+        %p mysql://build.internal/build
+      %div
+        %label Validate Request:
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et lacus vel metus semper fermentum ut sit amet ante. In accumsan ultricies libero rhoncus ultrices. Nullam vitae ullamcorper odio, ut placerat massa. Phasellus sed semper ante. Nullam vestibulum, elit vitae malesuada malesuada, elit nisl convallis nisi, ac porttitor eros risus vitae elit. Aenean et neque malesuada, placerat lacus sit amet, dictum nulla. Nam sit amet vehicula nibh. Nunc interdum arcu ut laoreet mattis. Proin vulputate neque vitae dictum elementum. In nec vehicula elit, at feugiat tortor.
+          Etiam fringilla diam vel massa laoreet, vitae porttitor libero condimentum. Pellentesque ultrices arcu quis nisi viverra consectetur. Nullam nulla augue, egestas id tempus ut, mollis vitae urna. Cras sagittis, erat sit amet mattis condimentum, lectus lectus cursus justo, eu iaculis massa mauris sit amet lectus. Suspendisse facilisis, orci vitae eleifend pretium, magna quam sodales felis, ac tempus tellus tortor sed felis. Proin convallis tellus quis ullamcorper accumsan. Praesent vitae nisi non risus lacinia feugiat ut ac ligula. Aenean feugiat neque sit amet sodales aliquet. Vestibulum felis diam, adipiscing vitae nunc sit amet, cursus facilisis dui. Duis dui leo, aliquet quis viverra id, ornare a felis. Ut mattis blandit erat, nec rhoncus dui tempus at. Etiam feugiat dolor lacus, sit amet vehicula tortor blandit ac.
       %div
         %label Status:
-        %label Disabled
+        %p Disabled
     %footer
       %button.delete Delete
 .modal.monitor-rest
@@ -50,9 +55,9 @@
         %p Github REST Service
       %div
         %label REST URL:
-        %label https://api.github.com/v2
+        %p https://api.github.com/v2
       %div
         %label Status:
-        %label Failed
+        %p Failed
     %footer
       %button.delete Delete

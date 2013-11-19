@@ -17,7 +17,8 @@
   z-index: 20
   .dialog
     background: white
-    width: 600px
+    width: 900px
+    max-height: 800px
     margin: 100px auto
     padding: 20px
 
@@ -43,15 +44,22 @@
         color: #999
 
     .body
+      overflow-y: scroll
+      max-height: 500px
       padding: 10px 0
       border-bottom: 1px solid $light-grey
       label, select, input, textarea, p
         display: inline-block
         margin: 0 10px
-        width: 200px
         font-size: 20px
         line-height: 30px
         color: #555
+      label
+        width: 200px
+      select, input, textarea, p
+        width: 600px
+      label, select, input
+        height: 30px
       select, input, textarea
         border: 1px solid $light-grey
         &:focus
@@ -59,17 +67,13 @@
       label
         display: inline-block
         vertical-align: top
-      select
-        height: 30px
-      input
-        height: 30px
       textarea
         height: 100px
         line-height: 18px
         font-size: 14px
         resize: none
-      p
-        width: 300px
+        &.long
+          height: 300px
       div
         padding: 10px 0
     footer

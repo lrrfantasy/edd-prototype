@@ -114,7 +114,8 @@ button {
 }
 .modal .dialog {
   background: white;
-  width: 600px;
+  width: 900px;
+  max-height: 800px;
   margin: 100px auto;
   padding: 20px;
 }
@@ -145,16 +146,26 @@ button {
   color: #999999;
 }
 .modal .dialog .body {
+  overflow-y: scroll;
+  max-height: 500px;
   padding: 10px 0;
   border-bottom: 1px solid #ededed;
 }
 .modal .dialog .body label, .modal .dialog .body select, .modal .dialog .body input, .modal .dialog .body textarea, .modal .dialog .body p {
   display: inline-block;
   margin: 0 10px;
-  width: 200px;
   font-size: 20px;
   line-height: 30px;
   color: #555555;
+}
+.modal .dialog .body label {
+  width: 200px;
+}
+.modal .dialog .body select, .modal .dialog .body input, .modal .dialog .body textarea, .modal .dialog .body p {
+  width: 600px;
+}
+.modal .dialog .body label, .modal .dialog .body select, .modal .dialog .body input {
+  height: 30px;
 }
 .modal .dialog .body select, .modal .dialog .body input, .modal .dialog .body textarea {
   border: 1px solid #ededed;
@@ -166,20 +177,14 @@ button {
   display: inline-block;
   vertical-align: top;
 }
-.modal .dialog .body select {
-  height: 30px;
-}
-.modal .dialog .body input {
-  height: 30px;
-}
 .modal .dialog .body textarea {
   height: 100px;
   line-height: 18px;
   font-size: 14px;
   resize: none;
 }
-.modal .dialog .body p {
-  width: 300px;
+.modal .dialog .body textarea.long {
+  height: 300px;
 }
 .modal .dialog .body div {
   padding: 10px 0;
