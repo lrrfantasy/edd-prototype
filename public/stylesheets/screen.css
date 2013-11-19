@@ -246,6 +246,13 @@ nav {
   text-align: right;
   border-bottom: 1px solid #ededed;
 }
+nav button.refresh {
+  float: left;
+  background: #ff7c47;
+}
+nav button.refresh:hover {
+  background: lightsalmon;
+}
 nav button.show-monitor {
   background: dodgerblue;
 }
