@@ -301,6 +301,7 @@ nav button.show-group:hover {
   background: lightskyblue;
   color: white;
   padding: 10px 20px;
+  cursor: pointer;
 }
 .main .box .content {
   display: none;
@@ -315,6 +316,40 @@ nav button.show-group:hover {
 }
 .main .box.active .content {
   display: block;
+}
+.main .box .setting:before {
+  content: "\e807";
+  font-family: fontello;
+  font-size: 26px;
+  line-height: 46px;
+  color: white;
+  position: absolute;
+  right: 50px;
+  top: 0;
+}
+.main .box .setting-menu {
+  display: none;
+  background: lightskyblue;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.main .box .setting-menu.active {
+  display: block;
+}
+.main .box .setting-menu a {
+  display: block;
+  padding-left: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  line-height: 36px;
+  border-top: 1px solid white;
 }
 
 .monitor {

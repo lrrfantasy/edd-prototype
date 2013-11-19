@@ -23,6 +23,10 @@ $(function(){
   $('.show').click(function(){
     $(this).parent().parent().removeClass('in-edit');
   });
+
+  $('a.setting').click(function(){
+    $(this).siblings(".setting-menu").toggleClass('active');
+  });
 });
 
 function bindModal(triggerButtonSelector, modalSelector){

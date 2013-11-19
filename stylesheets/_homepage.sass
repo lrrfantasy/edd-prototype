@@ -43,6 +43,7 @@ nav
       background: $light-sky-blue
       color: white
       padding: 10px 20px
+      cursor: pointer
     .content
       display: none
       padding: 10px 20px
@@ -51,3 +52,31 @@ nav
         @include rotate(0deg)
       .content
         display: block
+    .setting
+      &:before
+        content: "\e807"
+        font-family: fontello
+        font-size: 26px
+        line-height: 46px
+        color: white
+        position: absolute
+        right: 50px
+        top: 0
+    .setting-menu
+      display: none
+      background: $light-sky-blue
+      width: 100px
+      position: absolute
+      right: 0
+      z-index: 10
+      @include transition()
+      &.active
+        display: block
+      a
+        display: block
+        padding-left: 5px
+        text-decoration: none
+        color: white
+        font-size: 20px
+        line-height: 36px
+        border-top: 1px solid white
