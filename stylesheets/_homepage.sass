@@ -80,3 +80,13 @@ nav
         font-size: 20px
         line-height: 36px
         border-top: 1px solid white
+
+.delete-confirm
+  z-index: 40
+  background: rgba(0, 0, 0, 0.6)
+  footer
+    text-align: right
+    .yes
+      @include hover-background($dodger-blue)
+    .no
+      @include hover-background($crimson)

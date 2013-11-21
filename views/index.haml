@@ -13,7 +13,7 @@
       %a.setting{:href => "#"}
       .setting-menu
         %a{:href => "#"} Edit
-        %a{:href => "#"} Delete
+        %a.delete{:href => "#"} Delete
       .content
         %section.monitor.icon.url.success
           %h4 Google.com
@@ -56,7 +56,7 @@
       %a.setting{:href => "#"}
       .setting-menu
         %a{:href => "#"} Edit
-        %a{:href => "#"} Delete
+        %a.delete{:href => "#"} Delete
       .content
         %section.monitor.icon.url.success
           %h4 Google.com
@@ -66,6 +66,15 @@
           %h4 Github REST
         %section.monitor.icon.soap.success
           %h4 Twitter SOAP
+
+.modal.delete-confirm
+  .dialog
+    %header
+      %h3 Do you want to delete?
+      %span.close &times;
+    %footer
+      %button.yes Yes
+      %button.no No
 
 = render "layouts/modal-add"
 

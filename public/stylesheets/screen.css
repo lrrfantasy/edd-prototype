@@ -352,6 +352,26 @@ nav button.show-group:hover {
   border-top: 1px solid white;
 }
 
+.delete-confirm {
+  z-index: 40;
+  background: rgba(0, 0, 0, 0.6);
+}
+.delete-confirm footer {
+  text-align: right;
+}
+.delete-confirm footer .yes {
+  background: dodgerblue;
+}
+.delete-confirm footer .yes:hover {
+  background: #51a9ff;
+}
+.delete-confirm footer .no {
+  background: #ed143d;
+}
+.delete-confirm footer .no:hover {
+  background: #f14364;
+}
+
 .monitor {
   display: inline-block;
   width: 190px;
