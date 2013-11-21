@@ -12,7 +12,7 @@
       %h3 Virtual NPR
       %a.setting{:href => "#"}
       .setting-menu
-        %a{:href => "#"} Edit
+        %a.edit{:href => "#"} Edit
         %a.delete{:href => "#"} Delete
       .content
         %section.monitor.icon.url.success
@@ -67,6 +67,17 @@
         %section.monitor.icon.soap.success
           %h4 Twitter SOAP
 
+.modal.edit-group
+  .dialog
+    %header
+      %h3 Edit Virtual NPR
+      .span.close &times;
+    .body
+      %label Name:
+      %input{:type => 'text', :value => 'Virtual NPR'}
+    %footer
+      %button.save Save
+      %button.cancel Cancel
 .modal.delete-confirm
   .dialog
     %header

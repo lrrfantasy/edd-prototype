@@ -177,6 +177,12 @@ button {
   display: inline-block;
   vertical-align: top;
 }
+.modal .dialog .body input, .modal .dialog .body textarea {
+  color: #969696;
+}
+.modal .dialog .body input:focus, .modal .dialog .body textarea:focus {
+  color: #555555;
+}
 .modal .dialog .body textarea {
   height: 100px;
   line-height: 18px;
@@ -369,6 +375,22 @@ nav button.show-group:hover {
   background: #ed143d;
 }
 .delete-confirm footer .no:hover {
+  background: #f14364;
+}
+
+.edit-group footer {
+  text-align: right;
+}
+.edit-group footer .save {
+  background: dodgerblue;
+}
+.edit-group footer .save:hover {
+  background: #51a9ff;
+}
+.edit-group footer .cancel {
+  background: #ed143d;
+}
+.edit-group footer .cancel:hover {
   background: #f14364;
 }
 

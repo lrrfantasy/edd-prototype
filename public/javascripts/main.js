@@ -4,6 +4,7 @@ $(function(){
   bindModal('.show-monitor', '.modal.add-monitor');
   bindModal('.show-group', '.modal.add-group');
   bindModal('.delete', '.modal.delete-confirm');
+  bindModal('.edit', '.modal.edit-group');
 
   $.each(['url', 'database', 'rest'], function(idx, elem){
     bindModal('.monitor.' + elem, '.modal.monitor-' + elem);
