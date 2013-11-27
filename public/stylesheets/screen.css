@@ -90,6 +90,12 @@ button {
   width: 100px;
   color: white;
   font-size: 14px;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .modal-backdrop {
@@ -211,6 +217,12 @@ button {
 }
 .modal .dialog footer button.delete:hover {
   background: #f14364;
+}
+.modal .dialog footer button.delete a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
 }
 .modal .dialog footer button.edit {
   float: right;
