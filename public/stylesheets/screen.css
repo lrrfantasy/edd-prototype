@@ -121,8 +121,8 @@ a {
 .modal .dialog {
   background: white;
   width: 900px;
-  max-height: 800px;
-  margin: 100px auto;
+  max-height: 900px;
+  margin: 60px auto 0;
   padding: 20px;
 }
 .modal .dialog .with-edit, .modal .dialog .show {
@@ -142,6 +142,7 @@ a {
 }
 .modal .dialog h3 {
   display: inline-block;
+  font-size: 26px;
 }
 .modal .dialog .close {
   float: right;
@@ -168,7 +169,7 @@ a {
   width: 200px;
 }
 .modal .dialog .body select, .modal .dialog .body input, .modal .dialog .body textarea, .modal .dialog .body p {
-  width: 600px;
+  width: 560px;
 }
 .modal .dialog .body label, .modal .dialog .body select, .modal .dialog .body input {
   height: 30px;
@@ -241,6 +242,10 @@ a {
 
 .monitor-section {
   display: none;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .container {
