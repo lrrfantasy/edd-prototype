@@ -185,7 +185,7 @@ a {
   vertical-align: top;
 }
 .modal .dialog .body input, .modal .dialog .body textarea {
-  color: #969696;
+  color: #333333;
 }
 .modal .dialog .body input:focus, .modal .dialog .body textarea:focus {
   color: #555555;
