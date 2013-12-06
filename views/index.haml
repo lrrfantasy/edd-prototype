@@ -4,16 +4,16 @@
     %h1 Enterprise Dependency Dashboard
     %h2 Monitor all the dependencies in your project.
   %nav
-    %button.refresh Refresh
-    %button.show-monitor Add Monitor
-    %button.show-group Add Group
+    %a.btn.refresh Refresh
+    %a.btn.show-monitor Add Monitor
+    %a.btn.show-group Add Group
   .main
     .box.active
       %h3 Virtual NPR
-      %a.setting{:href => "#"}
+      %a.setting
       .setting-menu
-        %a.edit-group{:href => "#"} Edit
-        %a.delete{:href => "#"} Delete
+        %a.edit-group Edit
+        %a.delete Delete
       .content
         %section.monitor.icon.url.success
           %h4 Google.com
@@ -67,7 +67,7 @@
         %section.monitor.icon.soap.success
           %h4 Twitter SOAP
 
-.modal.edit-group
+.modal.edit-group-detail
   .dialog
     %header
       %h3 Edit Virtual NPR
@@ -76,16 +76,16 @@
       %label Name:
       %input{:type => 'text', :value => 'Virtual NPR'}
     %footer
-      %button.save Save
-      %button.cancel Cancel
+      %a.btn.save Save
+      %a.btn.cancel Cancel
 .modal.delete-confirm
   .dialog
     %header
       %h3 Do you want to delete?
       %span.close &times;
     %footer
-      %button.yes Yes
-      %button.no No
+      %a.btn.yes Yes
+      %a.btn.no No
 
 = render "layouts/modal-add"
 

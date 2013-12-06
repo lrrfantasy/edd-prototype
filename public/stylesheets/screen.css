@@ -85,17 +85,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
   font-weight: normal;
 }
 
-button {
+a.btn {
+  display: inline-block;
+  line-height: 40px;
   height: 40px;
   width: 100px;
   color: white;
   font-size: 14px;
+  text-align: center;
   padding: 0;
 }
 
 a {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .modal-backdrop {
@@ -206,37 +210,31 @@ a {
   padding: 10px 0;
   overflow: hidden;
 }
-.modal .dialog footer button.submit {
+.modal .dialog footer .btn.submit {
   float: right;
   background: dodgerblue;
 }
-.modal .dialog footer button.submit:hover {
+.modal .dialog footer .btn.submit:hover {
   background: #51a9ff;
 }
-.modal .dialog footer button.delete {
+.modal .dialog footer .btn.delete {
   background: #ed143d;
 }
-.modal .dialog footer button.delete:hover {
+.modal .dialog footer .btn.delete:hover {
   background: #f14364;
 }
-.modal .dialog footer button.delete a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  line-height: 40px;
-}
-.modal .dialog footer button.edit {
+.modal .dialog footer .btn.edit {
   float: right;
   background: dodgerblue;
 }
-.modal .dialog footer button.edit:hover {
+.modal .dialog footer .btn.edit:hover {
   background: #51a9ff;
 }
-.modal .dialog footer button.show {
+.modal .dialog footer .btn.show {
   float: right;
   background: #1aa093;
 }
-.modal .dialog footer button.show:hover {
+.modal .dialog footer .btn.show:hover {
   background: #21ccbb;
 }
 
@@ -269,23 +267,23 @@ nav {
   text-align: right;
   border-bottom: 1px solid #ededed;
 }
-nav button.refresh {
+nav .btn.refresh {
   float: left;
   background: #ff7c47;
 }
-nav button.refresh:hover {
+nav .btn.refresh:hover {
   background: lightsalmon;
 }
-nav button.show-monitor {
+nav .btn.show-monitor {
   background: dodgerblue;
 }
-nav button.show-monitor:hover {
+nav .btn.show-monitor:hover {
   background: #51a9ff;
 }
-nav button.show-group {
+nav .btn.show-group {
   background: #1aa093;
 }
-nav button.show-group:hover {
+nav .btn.show-group:hover {
   background: #21ccbb;
 }
 
@@ -395,19 +393,19 @@ nav button.show-group:hover {
   background: #f14364;
 }
 
-.edit-group footer {
+.edit-group-detail footer {
   text-align: right;
 }
-.edit-group footer .save {
+.edit-group-detail footer .save {
   background: dodgerblue;
 }
-.edit-group footer .save:hover {
+.edit-group-detail footer .save:hover {
   background: #51a9ff;
 }
-.edit-group footer .cancel {
+.edit-group-detail footer .cancel {
   background: #ed143d;
 }
-.edit-group footer .cancel:hover {
+.edit-group-detail footer .cancel:hover {
   background: #f14364;
 }
 
